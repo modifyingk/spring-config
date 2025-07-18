@@ -1,7 +1,9 @@
-spring:
-   application:
-      name: license-service-DEV
+# spring:
+#    application:
+#       name: license-service-DEV
 custom:
    name: develop
+example:
+   property: "I AM DEV"
 server:
   port: 8083
