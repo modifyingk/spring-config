@@ -1,9 +1,9 @@
-spring:
-  application:
-    name: license-service
-  profiles:
-    active:
-    - dev
+# spring:
+#   application:
+#     name: license-service
+#   profiles:
+#     active:
+#     - dev
 management:
   endpoints:
     web:
@@ -20,3 +20,8 @@ management:
       enabled: true
 server:
   port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ostock_dev
+    username: postgres
+    password: "{cipher}1da1101266a2781ba2f75090825a08fc84e968c7bf1d8fd90bc34d1334c6632b"
