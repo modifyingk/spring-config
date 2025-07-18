@@ -3,3 +3,5 @@ spring:
       name: license-service-DEV
 custom:
    name: develop
+server:
+  port: 8083
