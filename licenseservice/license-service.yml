@@ -1,9 +1,3 @@
-# spring:
-#   application:
-#     name: license-service
-#   profiles:
-#     active:
-#     - dev
 management:
   endpoints:
     web:
@@ -25,3 +19,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/ostock_dev
     username: postgres
     password: "{cipher}1da1101266a2781ba2f75090825a08fc84e968c7bf1d8fd90bc34d1334c6632b"
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+  instance: 
+    preferIpAddress: true
