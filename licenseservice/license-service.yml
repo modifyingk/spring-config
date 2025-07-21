@@ -18,7 +18,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ostock_dev
     username: postgres
-    password: "{cipher}f4acf57c5b97d82cd7b54a7fe066d0145a0b0b54793622a985ccdc99458a2a41"
+    password: "{cipher}8f56ef6d8f583fac6ef2723537be7752b31045ae5983707ec154f55ea3a225a6"
 eureka:
   client:
     registerWithEureka: true
