@@ -20,11 +20,11 @@ spring:
               lowerCaseServiceId: true
             routes:
               - id: license-service
-                uri: lb://LICENSE-SERVICE
                 predicates:
                   - Path=/licsvc/**
+                uri: lb://LICENSE-SERVICE
                 filters:
-                  - RewritePath=/licsvc/(?<segment>.*), /v1/${segment}
+                  - RewritePath=/licsvc/(?<segment>.*), /$\{segment}
               - id: organization-service
                 predicates:
                   - Path=/orgsvc/**
