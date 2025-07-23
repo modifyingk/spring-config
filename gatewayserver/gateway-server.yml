@@ -24,6 +24,6 @@ management:
     web:
       exposure:
         include: "*"
-  endpoints:
+  endpoint:
     gateway:
       access: unrestricted              
